@@ -3,10 +3,10 @@ upgrading_to_fusion:
   outputs:
     dev:
       type: snowflake
-      account: your_account_id
+      account: "{{ env_var('ACCOUNT') }}"
 
-      user: trouze
-      password: your_password_here # enter password you used to signup for Snowflake demo account here
+      user: "{{ env_var('USER') }}"
+      password: "{{ env_var('PASSWORD') }}" # enter password you used to signup for Snowflake demo account here
       role: ACCOUNTADMIN
       
       database: analytics
