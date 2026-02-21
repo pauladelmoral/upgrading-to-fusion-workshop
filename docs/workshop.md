@@ -111,7 +111,7 @@ Once resolved, `dbtf compile` should succeed.
 Copy the compiled artifacts and run `dbt clone` to materialize into a new schema:
 
 ```bash
-dbt clone --state ./artifacts/target --full-refresh --target fusion_dev
+dbt clone --state ./artifacts/target --target fusion_dev
 ```
 
 ## 10. Validate the run
