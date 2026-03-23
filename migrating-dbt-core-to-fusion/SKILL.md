@@ -1,6 +1,6 @@
 ---
 name: migrating-dbt-core-to-fusion
-description: A brief description of what this skill does
+description: Fix all error messages related to dbt-core when migrating to Fusion.
 ---
 
 # migrating-dbt-core-to-fusion
