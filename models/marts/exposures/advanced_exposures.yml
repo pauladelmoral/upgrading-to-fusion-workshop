@@ -41,29 +41,9 @@ exposures:
     maturity: medium  # Should be in meta
     config:
       tags: ["marketing", "customer_analysis"]
-  - name: financial_reporting_export
-    label: "Financial Data Export"
-    type: application
-    description: "Automated export to financial reporting system"
-    depends_on:
-      - ref('financial_reporting_with_protected')
-      - ref('order_history_iceberg')
+  
 
-    owner:
-      name: "Finance Team"
-      email: "finance@company.com"
 
-    # Complex exposure configuration that may cause issues
-    config:
-      meta:
-        export_format: "csv"
-        encryption_required: true
-        retention_days: 2555
-        access_level: "restricted"
-        compliance:
-          - "SOX"
-          - "GDPR"
-          - "CCPA"
   - name: ml_model_training_pipeline
     label: "ML Model Training Data"
     type: ml

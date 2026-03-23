@@ -1,5 +1,6 @@
 {{
   config(
+    enabled=false,
     materialized='table',
     access='private',
     group='finance',

@@ -1,11 +1,9 @@
-{{
-  config(
-    materialized='table',
-    restrict_access=true,
-    access_level='protected',
-    description='Financial reporting model with protected access - '
-  )
-}}
+{{ config(
+    enabled=false,
+    materialized="table", 
+    description='Financial reporting model with protected access - ', 
+    meta={'restrict_access': true, 'access_level': 'protected'}
+) }}
 
 -- This model references protected models from packages and has restrict-access: true
 
