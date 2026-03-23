@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "migrating-dbt-core-to-fusion": {
+      "source": "dbt-labs/dbt-agent-skills",
+      "sourceType": "github",
+      "computedHash": "c4b6d5c562a1044d4570c89a50cc79bc58d3d8cfdcfc7511e05e09cb33fb7cf4"
+    }
+  }
+}
