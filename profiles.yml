@@ -3,10 +3,23 @@ upgrading_to_fusion:
   outputs:
     dev:
       type: snowflake
-      threads: 16
-      account: PUHPITK-WX32683
-      user: PAULADMM
-      database: SNOWFLAKE_LEARNING_DB
-      warehouse: SNOWFLAKE_LEARNING_WH
-      schema: dbt_pdelmoral
-      password: 5P4v8tQYiSas6e
+      account: "{{ env_var('ACCOUNT') }}"
+
+      user: "{{ env_var('USER') }}"
+      password: "{{ env_var('PASSWORD') }}" # enter password you used to signup for Snowflake demo account here
+      role: ACCOUNTADMIN
+      
+      database: snowflake_learning_db
+      warehouse: compute_wh
+      schema: dbt_trouze
+    fusion_dev:
+      type: snowflake
+      account: "{{ env_var('ACCOUNT') }}"
+
+      user: "{{ env_var('USER') }}"
+      password: "{{ env_var('PASSWORD') }}" # enter password you used to signup for Snowflake demo account here
+      role: ACCOUNTADMIN
+      
+      database: snowflake_learning_db
+      warehouse: compute_wh
+      schema: fusion_dev
